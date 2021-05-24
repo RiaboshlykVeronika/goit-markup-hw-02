@@ -45,7 +45,7 @@ ul {
 /* Logo */
 
 .logo {
-    color: var(--title-text-color);
+    color: var(--accent-color);
     font-family: var(--accent-font);
     font-weight: 700;
     font-size: 26px;
@@ -53,8 +53,8 @@ ul {
     text-decoration: none;
 }
 
-.logo-accent {
-    color: var(--accent-color);
+.logo-black {
+    color: #000;
 }
 
 .logo-white {
@@ -63,7 +63,7 @@ ul {
 
 /* Site nav */
 
-.site-nav .link {
+.nav-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -72,12 +72,12 @@ ul {
     text-decoration: none;
 }
 
-.contacts-list .link {
+.contact-link {
     color: var(--primary-text-color);
     text-decoration: none;
 }
 
-.site-nav .link:hover, .site-nav .link:focus, .link:hover, .link:focus {
+.nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus, .footer-link:hover, .footer-link:focus {
     color: var(--accent-color);
 }
 
@@ -145,21 +145,22 @@ ul {
     color: var(--primary-white-color);
 }
 
-.white-link {
+.footer-link {
     color: var(--primary-white-color);
     opacity: 0.6;
     text-decoration: none;
 }
 
 /* Portfolio */
-.filter-button, .all-filter-button {
+.filter-button {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
 }
-.all-filter-button {
+
+ .filter-button:hover {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
