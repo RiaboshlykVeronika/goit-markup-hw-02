@@ -19,8 +19,6 @@ body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: var(--main-font);
-    font-style: normal;
-    font-weight: normal;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.7;
@@ -34,17 +32,77 @@ ul {
     list-style: none;
 }
 
+img {display: block;}
+
+.site-nav {
+    display: flex;
+}
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.link-current, .nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+  }  
+
+.principles-section, .work-section, .workers-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+      }
+      
+.work-section {
+    padding-top: 0;
+}
+
 .hero-section, .footer-section {
     background-color: var(--dark-background-color);
+}
+
+.hero-section {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 210px;}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .workers-section {
     background-color: var(--grey-background-color);
 }
 
-/* Logo */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+  }
 
+/* Logo */
 .logo {
+    margin-right: 93px;
+}
+
+.logo, .footer-logo {
     color: var(--accent-color);
     font-family: var(--accent-font);
     font-weight: 700;
@@ -67,17 +125,22 @@ ul {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
 .contact-link {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
+    
 }
 
-.nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus, .footer-link:hover, .footer-link:focus {
+.link-current:hover, .link-current:focus, .nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus, .footer-link:hover, .footer-link:focus {
     color: var(--accent-color);
 }
 
@@ -106,9 +169,10 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     text-decoration: none;
-    text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 /* Section */
@@ -119,6 +183,8 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .principles-title {
@@ -127,6 +193,13 @@ ul {
     font-size: 14px;
     line-height: 1.17;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.box-workers {
+    width: 270px;
+    border: 1px solid var(--primary-white-color);
+    background-color: var(--primary-white-color) ;
+    box-sizing: border-box;
 }
 
 .workers-title {
@@ -135,34 +208,64 @@ ul {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .workers-type {
+    font-size: 16px;
+    line-height: 1.19;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-.contacts-list {
+.adress {
     color: var(--primary-white-color);
 }
+
+.link-current, .nav-link, .contact-link {
+    display: block;
+}
+
+
+.footer-section {   
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    padding-bottom: 30px;
+ }
 
 .footer-link {
     color: var(--primary-white-color);
     opacity: 0.6;
     text-decoration: none;
+    margin-top: 9px;
 }
 
 /* Portfolio */
+
 .filter-button {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    cursor: pointer;
+    margin-bottom: 56px;
 }
 
- .filter-button:hover {
+ .filter-button:hover, .filter-button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+
+.project-box {
+    width: 370px;
+    border: 1px solid var(--primary-white-color);
+    background-color: var(--primary-white-color) ;
+    box-sizing: border-box;
 }
 
 .project-title {
@@ -171,11 +274,16 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .project-type {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
+    margin-bottom: 20px;
+    margin-left: 24px;
 }
 
